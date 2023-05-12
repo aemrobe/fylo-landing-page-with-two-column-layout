@@ -37,11 +37,47 @@ img {
   --Moderate-Cyan: hsl(170, 45%, 43%);
   --Light-Grayish-Blue: hsl(240, 75%, 98%);
   --Light-Gray: hsl(0, 0%, 75%);
-  --font-ff-Raleway-regular: " Raleway-regular";
+  --font-ff-Raleway-regular: "Raleway-regular";
   --font-ff-Raleway-bold: "Raleway-bold";
   --font-ff-OpenSans-regular: "Opensans-regular";
 }
 
 body {
   font-family: var(--font-ff-OpenSans-regular);
+  font-size: 1.6rem;
+}
+
+header {
+  border: 2px solid red;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2.1rem;
+}
+
+.logo {
+  width: 8rem;
+  height: 2.5rem;
+}
+
+/*navbar*/
+.navbar {
+  width: 51%;
+}
+
+.navbar__list {
+  border: 2px solid lime;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar__list-item {
+  font-size: 1.2rem;
+  font-family: var(--font-ff-Raleway-regular);
+}
+
+/*navbar links*/
+.navbar__list-item a {
+  text-decoration: none;
 }
