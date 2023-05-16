@@ -53,6 +53,7 @@ body {
   font-size: 1.6rem;
 }
 
+/*header*/
 header {
   display: flex;
   align-items: center;
@@ -68,6 +69,7 @@ header {
 /*navbar*/
 .navbar {
   width: 51%;
+  max-width: 36.7rem;
 }
 
 .navbar__list {
@@ -91,9 +93,12 @@ header {
   display: block;
   margin: 9.85rem auto 0;
   width: 81%;
+  max-width: 56.9rem;
 }
 
 .main-description {
+  max-width: 66.2rem;
+  margin: 0 auto;
   padding: 3.8rem 0 0;
 }
 
@@ -116,7 +121,8 @@ header {
 
 /* get started form */
 .get-started-form {
-  margin-top: 3.2rem;
+  max-width: 39.7rem;
+  margin: 3.2rem auto 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -175,6 +181,7 @@ header {
 
 .stay-productive-section__image {
   width: 85%;
+  max-width: 50.4rem;
   display: block;
   margin: 0 auto;
 }
@@ -188,6 +195,7 @@ header {
 }
 
 .stay-productive-section__text {
+  max-width: 61.7rem;
   margin: 1.5rem auto 0;
   padding: 0 1.5rem 0 0;
   width: 89%;
@@ -218,9 +226,10 @@ header {
 .user-review {
   border-radius: 3px;
   background: white;
-  margin-top: 4rem;
+  margin: 4rem auto 0;
   padding: 1.65rem 1.8rem 1.9rem 2.3rem;
   width: 73.5%;
+  max-width: 46.6rem;
 }
 
 /*user comment*/
@@ -265,7 +274,6 @@ header {
 
 /*get early access section*/
 .get-early-access {
-  outline: 2px solid red;
   padding: 5.45rem 0 6.7rem 0;
   background-color: var(--Desaturated-Blue);
 }
@@ -284,6 +292,7 @@ header {
   font-size: 1.3rem;
   line-height: 1.6;
   width: 72%;
+  max-width: 55.7rem;
   letter-spacing: 0.2px;
   color: var(--Light-Grayish-Blue);
 }
@@ -294,6 +303,7 @@ header {
   display: flex;
   flex-direction: column;
   width: 65%;
+  max-width: 39.6rem;
 }
 
 .get-early-access-form > * {
@@ -323,8 +333,10 @@ header {
 
 /*footer*/
 .footer {
-  outline: 2px solid magenta;
   background: var(--Very-Dark-Blue);
+}
+
+.footer .wrapper {
   padding: 7rem 2rem 4rem 4rem;
 }
 
@@ -408,4 +420,43 @@ header {
 
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+/*### media queries ###*/
+@media (min-width: 600px) {
+  header {
+    max-width: 115.2rem;
+    margin: 0 auto;
+  }
+
+  .footer .wrapper {
+    max-width: 115.2rem;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+
+  .logo-footer {
+    grid-column: 1 / -1;
+  }
+
+  .footer-links-list {
+    margin-top: 0;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: repeat(4, auto);
+    grid-auto-flow: column;
+    grid-gap: 1rem 0;
+  }
+
+  .footer-links-list__item {
+    margin-top: 0 !important;
+  }
+
+  /*socila media icons*/
+  .social-media-icon-list,
+  .attribution {
+    margin-top: 7rem;
+    grid-column: 1 / -1;
+  }
 }
