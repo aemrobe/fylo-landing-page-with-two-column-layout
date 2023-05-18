@@ -87,6 +87,7 @@ header {
 /*navbar links*/
 .navbar__list-item a {
   text-decoration: none;
+  color: var(--Desaturated-Blue);
 }
 
 /*All your files section*/
