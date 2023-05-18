@@ -34,8 +34,8 @@ desktop view
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Solution]()
+- Live Site URL: [live site](https://aemrobe.github.io/fylo-landing-page-with-two-column-layout/)
 
 ## My process
 
